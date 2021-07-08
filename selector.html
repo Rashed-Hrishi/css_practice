@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        h1{
+            color: red;
+            background-color: black;
+            text-align: center;
+        }
+        #id{
+            color: white;
+            background-color: black;
+            text-align: center;
+            margin: 15px 0 15px 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .class{
+            background-color: chocolate;
+            padding: 10px;
+        }
+        .class h3{
+            background-color: crimson;
+            text-align: center;
+        }
+        .h3{
+            text-transform: uppercase;
+        }
+        .class p{
+            color: darkblue;
+            background-color: darkcyan;
+            text-align: justify;
+            padding: 10px;
+        }
+        .multi_class{
+            background-color: rgb(211, 201, 201);
+            text-align: center;
+        }
+        .same_class{
+            color: #7369ff;
+        }
+        .uppercase{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class, ID & Tag Selector. Or More selector using.</h1>
+    <div id="id">
+        <h2>This is h2 heading.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ipsum?</p>
+    </div>
+    <div class="class">
+        <h3 class="h3">This is h2 heading.</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus aperiam, inventore, cum nemo saepe consectetur deleniti sapiente quo excepturi eligendi adipisci labore a sequi necessitatibus vel praesentium in dicta numquam, deserunt quis consequatur cupiditate natus officia. Pariatur accusamus voluptate maiores dolorem exercitationem nihil tempora earum voluptas dolore! Sequi, obcaecati consequuntur!</p>
+    </div>
+    <div class="multi_class">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p class="same_class uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, eaque delectus. Rem, repudiandae assumenda? Maxime ipsam ea delectus illo explicabo!</p>
+        <p class="same_class uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat nemo, inventore minima dolorem ipsam perferendis iure. Animi voluptas dolorem perspiciatis quae maiores pariatur quos, mollitia culpa dolorum, dicta excepturi!</p>
+        <p class="same_class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore voluptas distinctio. Cumque beatae ipsam vitae veritatis! Earum laboriosam quaerat nam maxime facilis nulla praesentium natus quod aliquam, reiciendis quis doloremque ipsam ab mollitia harum ullam accusamus quia non dolor.</p>
+        <small class="same_class">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam esse blanditiis voluptate sequi impedit nostrum, illo pariatur vitae delectus vel!</small>
+    </div>
+</body>
+</html>
