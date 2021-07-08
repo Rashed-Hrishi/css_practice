@@ -6,11 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selector</title>
     <style>
+        /* universal selector starts */
+        *{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        /* universal selector ends */
+
+        /* grouping tag selector ends */
+        h5,h6{
+            color: indianred;
+            background-color: lawngreen;
+            text-align: center;
+            font-size: 20px;
+            text-transform: lowercase;
+        }
+        /* grouping tag selector ends */
+
+        /* tag selector ends */
         h1{
             color: red;
             background-color: black;
             text-align: center;
         }
+        /* tag selector ends */
+
+        /* id selector starts */
         #id{
             color: white;
             background-color: black;
@@ -19,6 +41,9 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        /* id selector starts */
+
+        /* class selector starts */
         .class{
             background-color: chocolate;
             padding: 10px;
@@ -36,16 +61,50 @@
             text-align: justify;
             padding: 10px;
         }
+        /* class selector starts */
+
+        /* multi class selector starts */
         .multi_class{
             background-color: rgb(211, 201, 201);
             text-align: center;
         }
+        /* multi class selector starts */
+
+        /* class selector but two value starts */
         .same_class{
             color: #7369ff;
         }
         .uppercase{
             text-transform: uppercase;
         }
+        /* class selector but two value ends */
+
+        /* CSS Combinators Selectors-descendant,child,adjacent sibling  & general sibling selectors */
+        /* descendant selector starts*/
+        div h1{
+            color: lightcoral;
+            background-color: lightcyan;
+        }
+        /* descendant selector ends*/
+
+        /* child selector starts*/
+        section > p{
+            color: rgb(26, 39, 223);
+            background-color: lime;
+        }
+        /* child selector ends*/
+        /* adjacent sibling selector ends*/
+        div + p{
+            color: magenta;
+            background-color: mediumblue;
+        }
+        /* adjacent sibling selector ends*/
+
+        /* general sibling selector ends*/
+        div ~ p{
+            font-size: 2rem;
+        }
+        /* general sibling selector ends*/
     </style>
 </head>
 <body>
@@ -65,5 +124,22 @@
         <p class="same_class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore voluptas distinctio. Cumque beatae ipsam vitae veritatis! Earum laboriosam quaerat nam maxime facilis nulla praesentium natus quod aliquam, reiciendis quis doloremque ipsam ab mollitia harum ullam accusamus quia non dolor.</p>
         <small class="same_class">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam esse blanditiis voluptate sequi impedit nostrum, illo pariatur vitae delectus vel!</small>
     </div>
+    <br>
+    <br>
+    <h5>Grouping Selector</h5>
+    <h6>Grouping Selector</h6> 
+    <br><br>
+    
+    <div>
+        <h1>Descendant selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quidem, nihil eius debitis sint, excepturi consequuntur unde dignissimos id praesentium laudantium eligendi asperiores, aliquid quis laboriosam placeat temporibus? Explicabo, animi.</p>
+        <section>
+            <h1>Child Selector</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, perspiciatis.</p>
+        </section>
+    </div>
+    <p>adjacent sibling selector</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora expedita nemo quasi, officiis dolore tempore fuga ratione velit itaque iusto!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, incidunt. Aut quos delectus odio ratione, obcaecati consequuntur quo repellendus placeat soluta accusamus! Facilis odio, perferendis sapiente veritatis officiis eligendi molestias.</p>
 </body>
 </html>
