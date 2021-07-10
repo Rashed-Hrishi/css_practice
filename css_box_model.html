@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            background-color: rgb(218, 209, 209);
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1{
+            color: white;
+            background-color: rgb(17, 56, 19);
+            margin-top: 5px;
+        }
+        h2{
+            color: brown;
+            background-color: rgb(35, 35, 141);
+        }
+        h1,h2{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        .width{
+            width: 50%;
+            margin-top: 10px;
+            background-color: wheat;
+        }
+        .width p{
+            padding: 10px;
+            text-align: justify;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        .height{
+            height: 200px;
+            margin-top: 10px;
+            background-color: yellowgreen;
+        }
+        .height P{
+            text-transform: lowercase;
+        }
+        .margin{
+            margin: 10px 20px 30px 40px;
+            /* margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px; */
+            background-color: green;
+        }
+        .margin p{
+            margin: 50px;
+            margin-bottom: 100px;
+            background-color: indigo;
+        }
+        .padding{
+            padding: 10px 20px 30px 40px;
+            background-color: hotpink;
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px; */
+        }
+        .padding p{
+            padding: 10px;
+            background-color: indigo;
+            margin-top: 10px;
+        }
+        .border{
+            border: 50px solid black;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .border h2{
+            border-top: 10px solid gray;
+            border-right: 10px dotted white;
+            border-bottom: 10px dashed greenyellow;
+            border-left: 10px dotted indianred;
+        }
+        .border p{
+            margin-top: 20px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 20px solid rgb(97, 13, 194);
+            border-collapse: collapse;
+            border-radius: 20px;
+        }
+        .content{
+            width: 75%;
+            margin-top: 30px;
+            background-color: yellowgreen;
+            border: 20px solid #0a1f08;
+            border-radius: 30px;
+            display: flex;
+            
+        }
+        .content h2{
+            font-size: 1.5rem;
+            color: lightblue;
+            border: 10px solid white;
+            border-radius: 10px;
+        }
+        .content p{
+            font-size: 0.8rem;
+            color: lightcyan;
+            background-color: lightseagreen;
+            border: 3px solid rgb(79, 80, 11);
+            border-radius: 10px;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model : Margin, Padding, Width, Height,Content,Border etc.</h1>
+    <div class="width">
+        <h2>Box Model:width</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+    <div class="height">
+        <h2>Box Model:height</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+    <div class="margin">
+        <h2>Box Model:margin</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+    <div class="padding">
+        <h2>Box Model:padding</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+    <div class="border">
+        <h2>Box Model:border</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+    <div class="content">
+        <h2>Box Model:content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam facere nostrum sequi, enim cupiditate nemo adipisci ducimus veniam. Laboriosam?</p>
+    </div>
+</body>
+</html>
