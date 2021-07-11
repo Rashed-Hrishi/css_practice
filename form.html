@@ -19,7 +19,7 @@
             background-color: #d3cfcf;
             max-width: 1000px;
         }
-        h1{
+        h1,h2{
             color: white;
             background-color: #2b692b;
             text-align: center;
@@ -84,7 +84,7 @@
             color: #360606;
             background-color: rgb(174, 209, 103,0.10);
         }
-        input[type="button"],[type="reset"]{
+        input[type="button"], [type="submit"], [type="reset"]{
             width: 100px;
             border: none;
             border-radius: 5px;
@@ -92,9 +92,13 @@
             color: whitesmoke;
             padding: 10px;
             cursor: pointer;
-            transition: 2s;
+            transition: 0.8s;
         }
         input[type="button"]:hover{
+            /* background-color: #6d9b12; */
+            background-image: linear-gradient(to right,red,green);
+        }
+        input[type="submit"]:hover{
             /* background-color: #6d9b12; */
             background-image: radial-gradient(circle,white,red,green,yellow);
         }
@@ -112,16 +116,27 @@
             /* background-color: #6d9b12; */
             background-image: linear-gradient(to right,red,green);
         }
-
+        .checkbox{
+            color: #dfdcd9;
+            background-color: rgb(12, 194, 73);
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
     <h1>CSS Form Design</h1>
     <form action="">
+        <h2>Search Area</h2>
         <input type="text" name="search" id="search" placeholder="Search">
         <br>
         <br>
         <br>
+        <br>
+
+        <h2>Input Type Text</h2>
         <label for="fname">First Name :</label>
         <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
 
@@ -129,6 +144,19 @@
         <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
         <br>
 
+        <h2>Checkbox</h2>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label class="checkbox" for="vehicle1"> I have a bike</label>
+        <br>
+        <br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label class="checkbox" for="vehicle2"> I have a car</label>
+        <br>
+        <br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label class="checkbox" for="vehicle3"> I have a boat</label><br><br>
+
+        <h2>Dropdown</h2>
         <select name="subject_name" id="subjects">
             <option value="html">HTML</option>
             <option value="css">CSS</option>
@@ -137,12 +165,14 @@
         </select>
         <br><br>
 
+        <h2>Textarea</h2>
         <textarea name="" id="" cols="30" rows="10">
             Write Your Message Here.
         </textarea>
         <br>
 
-        <input type="button" value="Submit">
+        <input type="button" value="Button">
+        <input type="submit" value="Submit">
         <input type="reset" value="Reset">
     </form>
 
