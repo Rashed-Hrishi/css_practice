@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #32312f;
+            font-family: sans-serif;
+        }
+        .table_container{
+            padding: 0 10%;
+            margin: 40px auto 0;
+        }
+        .heading{
+            font-size: 40px;
+            color: #f1f1f1;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 30px;
+            color: #f1f1f1;
+            background-color: blue;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px 0;
+        }
+        .table thead{
+            background-color: #ee2828;
+        }
+        .table thead tr th{
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.35px;
+            color: #ffffff;
+            opacity: 1;
+            padding: 12px;
+            vertical-align: top;
+            border: 1px solid #dee2e685;
+        }
+        .table tbody tr td{
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            font-weight: normal;
+            color: #f1f1f1;
+            background-color: #3c3f44;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dee2e685;
+        }
+        .table .open{
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.35px;
+            color: #ff1046;
+        }
+        .table tbody tr td .btn{
+            width: 130px;
+            text-decoration: none;
+            line-height: 35px;
+            display: inline-block;
+            background-color: #ff1046;
+            font-weight: medium;
+            color: #ffffff;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            font-size: 14px;
+            opacity: 1;
+        }
+        .table tbody tr td .btn:hover{
+            color: brown;
+            background-color: cadetblue;
+            font-size: 16px;
+        }
+        @media (max-width: 768px){
+            .table thead{
+                display: none;
+                width: 100%;
+            }
+            .table, .table caption, .table tbody, .table tr, .table td{
+                display: block;
+                width: 100%;
+            }
+            .table tr{
+                margin-bottom: 10px;
+            }
+            .table tbody tr td{
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .table td:before{
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="table_container">
+        <h1 class="heading">Responsive Table Design Using HTML & CSS</h1>
+        <table class="table">
+            <caption>Table Caption Name</caption>
+            <thead>
+                <tr>
+                    <th>Id.</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Result</th>
+                    <th>Details</th>
+                    <th>Blank</th>
+                    <th>Remarks</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Id.">101</td>
+                    <td data-label="Name">Rashed</td>
+                    <td data-label="Class">S.S.C</td>
+                    <td data-label="Result">Pass</td>
+                    <td data-label="Details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur?</td>
+                    <td>Blank</td>
+                    <td data-label="Blank"><span class="open">Open</span></td>
+                    <td data-label="#"><a class="btn" href="#">Enroll Now!</a></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Rashed</td>
+                    <td>S.S.C</td>
+                    <td>Pass</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur?</td>
+                    <td>Blank</td>
+                    <td><span class="open">Open</span></td>
+                    <td data-label="#"><a class="btn" href="#">Enroll Now!</a></td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Sayem</td>
+                    <td>S.S.C</td>
+                    <td>Pass</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur?</td>
+                    <td>Blank</td>
+                    <td><span class="open">Open</span></td>
+                    <td data-label="#"><a class="btn" href="#">Enroll Now!</a></td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Sayem</td>
+                    <td>S.S.C</td>
+                    <td>Pass</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, consequuntur?</td>
+                    <td>Blank</td>
+                    <td><span class="open">Open</span></td>
+                    <td data-label="#"><a class="btn" href="#">Enroll Now!</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
