@@ -48,6 +48,13 @@
             border-radius: 5px;
             background-color: #12522e;
         }
+        select{
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-image: linear-gradient(to top,tomato,yellow,green);
+            border-radius: 5px;
+        }
         #search{
             background-image: url(images/search.png);
             background-repeat: no-repeat;
@@ -120,6 +127,15 @@
 
         <label for="lname">Last Name :</label>
         <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+        <br>
+
+        <select name="subject_name" id="subjects">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="bootstrap">Bootstrap</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <br><br>
 
         <textarea name="" id="" cols="30" rows="10">
             Write Your Message Here.
