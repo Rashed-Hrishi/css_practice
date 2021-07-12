@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link & Nav Create Style</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1000px;
+            background-color: burlywood;
+            font-family: sans-serif;
+        }
+        #nav_menu{
+            /* width: 100%; */
+            width: 500px;
+            height: 65px;
+            background-color: black;
+            margin: 0 auto;
+            
+        }
+        #nav_menu ul{
+            
+        }
+        #nav_menu ul li{
+            list-style-type: none;
+            margin: 20px;
+            float: left;
+        }
+        #nav_menu ul li a{
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+        }
+        #nav_menu ul li a:hover{
+            color: chocolate;
+            background-color: #d3c0c0;
+            border: none;
+            border-radius: 5px;
+            transition: 1s;
+            font-size: 16px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </div>
+</body>
+</html>
