@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+
+    <!-- font awesome 5 cdn added for font awesome icon customization -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1000px;
+            font-family: sans-serif;
+            background-color: blanchedalmond;
+        }
+        .list_style{
+            background-color: #69c27c;
+            color: white;
+            padding: 10px 0px 10px 50px;
+        }
+        .list_style ul{
+            /* list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("images/tick1.png"); */
+            list-style: circle inside url("images/tick2.png");
+        }
+
+        .list_style_custom{
+            background-color: #60d460;
+            /* color: #13094d; */
+            padding: 10px 0px 10px 50px;
+        }
+        .list_style_custom ul{
+            list-style-type: none;
+        }
+        .list_style_custom ul li{
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .list_style_custom ul li::before{
+            content: '\f058';
+            font-family: 'font awesome 5 free';
+            color:#111e68;
+            font-size: 1.5rem;
+            font-weight: bold;
+
+            display: inline-block;
+            margin: 10px 0px 10px 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- list-style-image downloaded from flat icon but not customization -->
+    <div class="list_style">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JAVASCRIPT</li>
+            <li>JQUERY</li>
+        </ul>
+    </div>
+    <br>
+
+        <!-- fontawesome 5 icon added for customization -->
+    <div class="list_style_custom">
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JAVASCRIPT</li>
+            <li>JQUERY</li>
+        </ul>
+    </div>
+</body>
+</html>
