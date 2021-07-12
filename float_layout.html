@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: honeydew;
+            font-family: sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 1000px;
+        }
+        .div1{
+            background-color: green;
+            float: left;
+            /* width: 100%; */
+            width: 400px;
+            height: 150px;
+            padding: 10px;
+            text-align: center;
+        }
+        .div2{
+            background-color: #e9c27b;
+            float: right;
+            /* width: 75%; */
+            width: 400px;
+            height: 150px;
+            padding: 10px;
+        }
+        .div2 h1{
+            color: white;
+            background-color: #1100ff;
+            text-align: center;
+            padding: 5px 0px;
+        }
+        .div2 p{
+            color: brown;
+            background-color: #5ce041;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .div3{
+            background-color: #8680dd;
+            float: left;
+            /* width: 50%; */
+            width: 400px;
+            height: 150px;
+            margin-left: 30%;
+            margin-top: 20px;
+            padding: 10px;
+        }
+        .div4{
+            background-color: hotpink;
+            padding: 10px;
+        }
+        .div_clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>This is heading 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, tenetur!</p>
+    </div>
+
+    <div class="div2">
+        <h1>This is heading 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, tenetur!</p>
+    </div>
+
+    <div class="div3">
+        <h1>This is heading 3</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat adipisci,</p>
+    </div>
+
+    <div class="div_clear"></div>
+    <br>
+
+    <div class="div4">
+        <h1>This is heading 4</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat adipisci,</p>
+    </div>
+</body>
+</html>
