@@ -6,29 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Z-index & Variable</title>
     <style>
+        /* for globally declaration variable in z-index without internet explorer browser */
+        :root{
+            --color:green;
+            --color1:red;
+            --background-color: green;
+            --background-color1: red;
+            --height:300px;
+            --z-index: 10;
+        }
         .div{
-            background-color: green;
+            /* background-color: green; */
+            background-color: var(--background-color);
             width: 300px;
-            height: 250px;
+            /* height: 250px; */
+            height: var(--height);
             left: 150px;
             top: 150px;
             position: absolute;
+            /* z-index: -5; */
+            z-index: var(--z-index);
         }
         .div1{
-            background-color: red;
+            /* background-color: red; */
+            background-color: var(--background-color1);
             width: 300px;
             height: 250px;
             left: 100px;
             top: 100px;
             position: absolute;
+            z-index: 2;
         }
+
+        /* fallback variable : gray */
         .div2{
-            background-color: gray;
+            /* background-color: gray; */
+            background-color: var(--color6, gray) ;
             width: 300px;
             height: 250px;
             left: 50px;
             top: 50px;
             position: absolute;
+            z-index: -3;
         }
         .div3{
             background-color: blue;
@@ -37,6 +56,7 @@
             left: 20px;
             top: 30px;
             position: absolute;
+            z-index: 4;
         }
     </style>
 </head>
