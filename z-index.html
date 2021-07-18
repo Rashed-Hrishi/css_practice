@@ -10,6 +10,7 @@
         :root{
             --color:green;
             --color1:red;
+            --color2:blue;
             --background-color: green;
             --background-color1: red;
             --height:300px;
@@ -49,14 +50,29 @@
             position: absolute;
             z-index: -3;
         }
+        /* for all browser support: below way */
         .div3{
             background-color: blue;
+            background-color: var(--color2, yellow);
             width: 300px;
             height: 250px;
             left: 20px;
             top: 30px;
             position: absolute;
             z-index: 4;
+        }
+        /* for responsive */
+        @media screen and (max-width: 500px) {
+            :root{
+            --color:red;
+            --color1:green;
+            --color2:black;
+            --background-color: yellow;
+            --background-color1: blue;
+            --height:250px;
+            --z-index: -5;
+            }
+        
         }
     </style>
 </head>
